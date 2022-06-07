@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Catalogo de Bandas</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="/">
+            <h1>Catalogo de bandas</h1>
+          </a>
+        </li>
+        <li><a href="/">Bandas</a></li>
+        <li><a href="/cadastrar">Cadastrar</a></li>
+      </ul>
+    </nav>
+
+    <% if(message != "") { %>
+    <section id="message">
+      <p><%= message %></p>
+      <span id="close">&times;</span>
+    </section>
+    <% } %>
+
+    <main>
+      <section id="cards">
+        <h2>Lista de Bandas</h2>
+
+        <% catalogoBandas.forEach((bandas) =>{ %>
+
+        <div class="card">
+          <img src="<%= bandas.imagem %>" alt="foto banda" />
+          <h3><%= bandas.nome %></h3>
+          <p class="descricao"><%= bandas.descricao %></p>
+          <p>Estilo:<%= bandas.estilo %></p>
+          <!--botoes-->
+          <a class="botoes" href="/editar/<%= bandas.id %>">Editar</a>
+          <a class="botoes" href="/detalhes/<%= bandas.id %>">Detalhes</a>
+          <a id="del" href="/delete/<%= bandas.id %>">Apagar</a>
+        </div>
+        <% }) %>
+      </section>
+    </main>
+    <footer>
+      <p>Todos os direitos reservados para Ogait Ashtar &copy;</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
