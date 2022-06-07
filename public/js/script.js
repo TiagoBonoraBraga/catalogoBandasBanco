@@ -13,8 +13,8 @@ const inputImagem = document.querySelector("#imagem");
 
 const button = document.querySelector("#btnCadastrar");
 
-const closeMessage = document.querySelector("#close");
-const message = document.querySelector("#message");
+// const closeMessage = document.querySelector("#close");
+// const message = document.querySelector("#message");
 
 // const closeModal = document.querySelector(".close");
 // const h3 = document.querySelector("#msgText");
@@ -78,10 +78,10 @@ inputImagem.addEventListener("keyup", ()=>{
 });
 
 //message
-closeMessage.addEventListener("click", () =>{
-    message.style.display = "none";
-});
+// closeMessage.addEventListener("click", () =>{
+//     message.style.display = "none";
+// });
 
-setTimeout(() => {
-    message.style.display = "none";
-}, 5000);
+// setTimeout(() => {
+//     message.style.display = "none";
+// }, 5000);
