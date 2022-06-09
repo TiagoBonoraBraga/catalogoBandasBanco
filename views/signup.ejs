@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
+  
     <%- include('./components/head') %>
-  </head>
+
   <body>
    
     <%- include('./components/nav') %>
 
+    
+
     <main>
       <section id="cadastrar" class="outras">
         <div>
-          
+          <% if(message != "") { %>
+            <%- include('./components/alerts') %>
+              <% } %>
           <h2>Cadastre sua Banda</h2>
 
           <form action="/create" method="POST">
@@ -20,7 +24,7 @@
               name="nome"
               id="nome"
               placeholder="Digite o nome da banda:"
-              required
+              
             />
 
             <label for="descricao" id="labelDescricao">Descrição:</label>
@@ -29,7 +33,7 @@
               name="descricao"
               id="descricao"
               placeholder="Digite a descrição da banda:"
-              required
+              
             />
 
             <label for="estilo" id="labelEstilo">Estilo</label>
@@ -38,7 +42,7 @@
               name="estilo"
               id="estilo"
               placeholder="Digite o estilo da banda:"
-              required
+              
             />
 
             <label for="imagem" id="labelImagem">Estilo</label>
@@ -47,7 +51,7 @@
               name="imagem"
               id="imagem"
               placeholder=" Link da imagem:"
-              required
+              
             />
 
             <button type="submit" id="btnCadastrar">Cadastrar</button>

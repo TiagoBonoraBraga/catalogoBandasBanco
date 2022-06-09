@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <%- include('./components/head') %>
-  </head>
-  <body>
-    
-    <%- include('./components/nav') %>
+  <%- include('./components/head') %>
 
-   
+  <body>
+    <%- include('./components/nav') %>
+    <header>
+      <% if(message != "") { %> 
+        <%- include('./components/alerts') %>
+      <% } %>
+    </header>
+
     <main>
       <section id="cards">
         <h2>Lista de Bandas</h2>
@@ -28,14 +30,8 @@
       </section>
     </main>
 
-    <% if(bandasPut != null) {%>
-    <%- include('./components/modalPut') %>
-    <% } %>
-
-    <% if(bandasDel != null) {%>
-      <%- include('./components/modalDel') %>
-      <% } %>
-    
+    <% if(bandasPut != null) {%> <%- include('./components/modalPut') %> <% } %>
+    <% if(bandasDel != null) {%> <%- include('./components/modalDel') %> <% } %>
     <%- include('./components/footer') %>
 
     <script src="/js/script.js"></script>
