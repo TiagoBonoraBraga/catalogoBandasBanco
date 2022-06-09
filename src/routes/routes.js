@@ -14,4 +14,6 @@ routes.post("/update/:id", CatalogoController.update);
 
 routes.get("/remove/:id", CatalogoController.remove);
 
+routes.get("/detalhes/:id", CatalogoController.detalhes);
+
 module.exports = routes;

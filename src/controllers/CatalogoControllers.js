@@ -103,6 +103,17 @@ const remove = async (req, res) => {
   }
 };
 
+const detalhes = async (req, res) => {
+  try {
+    const bandas = await Bandas.findByPk(req.params.id);
+    res.render("detalhes", {
+      bandas,
+    });
+  } catch (error) {
+    res.send(error.message);
+  }
+};
+
 module.exports = {
   getAll,
   singup,
@@ -110,4 +121,6 @@ module.exports = {
   getById,
   update,
   remove,
+  detalhes
+  
 };
