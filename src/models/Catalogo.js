@@ -16,7 +16,7 @@ const Bandas = connection.define("bandas", {
     type: Sequelize.STRING,
     allowNull: false,
   },
-  tipo: {
+  estilo: {
     type: Sequelize.STRING,
     allowNull: false,
   },

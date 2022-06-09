@@ -1,0 +1,57 @@
+<section class="modal-overLay" id="overLay">
+    <div class="modal" id="modal">
+        
+        <div class="modal-header">
+            <h3>Atualizar Banda</h3>
+            <a href="/" id="close-modal-put">x</a>
+        </div>
+
+        <div class="modal-body">
+            <form class="form-modal" action="/update/<%= bandasPut.id %>" method="POST">
+                <label for="nome" id="labelNome">Nome:</label>
+                <input
+                  type="text"
+                  name="nome"
+                  id="nome"
+                  value="<%= bandasPut.nome %>"
+                  placeholder="Digite o nome da banda:"
+                  required
+                />
+    
+                <label for="descricao" id="labelDescricao">Descrição:</label>
+                <input
+                  type="text"
+                  name="descricao"
+                  id="descricao"
+                  value="<%= bandasPut.descricao %>"
+                  placeholder="Digite a descrição da banda:"
+                  required
+                />
+    
+                <label for="estilo" id="labelEstilo">Estilo</label>
+                <input
+                  type="text"
+                  name="estilo"
+                  id="estilo"
+                  value="<%= bandasPut.estilo %>"
+                  placeholder="Digite o estilo da banda:"
+                  required
+                />
+    
+                <label for="imagem" id="labelImagem">Estilo</label>
+                <input
+                  type="url"
+                  name="imagem"
+                  id="imagem"
+                  value="<%= bandasPut.imagem %>"
+                  placeholder=" Link da imagem:"
+                  required
+                />
+    
+                <button type="submit" id="btnCadastrar">Cadastrar</button>
+              </form>
+        </div>
+
+    </div>
+    
+</section>
