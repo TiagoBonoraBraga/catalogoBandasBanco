@@ -1,5 +1,5 @@
-const routes = require('express').Router();
-const { route } = require('express/lib/application');
+const routes = require("express").Router();
+const { route } = require("express/lib/application");
 const CatalogoController = require("../controllers/CatalogoControllers");
 
 routes.get("/", CatalogoController.getAll);

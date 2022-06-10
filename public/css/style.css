@@ -407,15 +407,7 @@ div#btns-del a#yes:hover{
   color: #007a0a;
 }
 
-.message-info{
-  background-color: #0003b4;
-  color: #fff;
-}
 
-.message-warning{
-  background-color: #fffaba;
-  color: #b49900;
-}
 
 .message i{
   cursor: pointer;
