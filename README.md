@@ -2,7 +2,8 @@
 
 Projeto Catalogo de bandas do aluno Tiago Bonora Braga - modulo 2 do curso de Desenvolvimento Full stack Blue EdTech 2022.
 
-Para add novas Bandas utitlize o o google imagens para pegar novas bandas
+
+Para add novas Bandas utitlize o o google imagens para pegar novas bandas em jpg ou png, cuidado com imagens quebradas que podem dar erro no cadastro.
 
           Olá colecionador de Bandas, Bem Vindo Ao Catálogo de Bandas
 Para inicializar nosso Catalogo será preciso usa o sistema de organização MVC.
