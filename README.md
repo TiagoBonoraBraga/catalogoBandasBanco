@@ -16,8 +16,20 @@ Criar repositório no Github com: - public - readme - gitgnore - licença Mozill
 pasta public contendo: - css - style.css - img - imagens usadas no projeto - js - script.js
 
 pasta views contendo: - index.ejs - para manipular o html
+                      - signup.ejs - para cadastro
+                      - editar.ejs
+                      - detalhes.ejs
+
+pasta conponents - contendo os modelos de header, nav, alerts, footer, modelDel e modalPut
 
 arquivo na pasta raiz - index.js
+                      - .env (usar gitgnore)
+                      -.env-exemplo com o exemplo dos  dados do banco
+
+pasta src - contendo pasta controllers com arquivo .js com a mecanica das rotas
+          - contendo pasta database com arquivo db.js conectando o sequelize 
+          - contendo pasta models com arquivo .js com modelo do site com o banco
+          - contendo pasta routes co arquivo routes.js ligando as rotas
 
 2 - instalar no terminal do VSCode - npm init - para iniciar o detalhamento do projeto e abrir o package.json - no arquivo package.json trocar o script "test" por: "start": "node index.js", "dev": "nodemon index.js"
 
@@ -36,7 +48,9 @@ arquivo na pasta raiz - index.js
                                              app.listem(3000);
 
                            - npm i ejs - para instalar o .ejs
-3 - para rodar coloque no terminal do VSCODE - npm run dev - em abra a porta 3000 htt://localhost:3000 no navegador
+                           -mpn i dotenv
+                           
+3 - criar o banco de dados no postgres
 
 4 - copie o codigo do meu GitHub.com: ogait-ashtar no repositorio catalogoBandas.
 
